@@ -1,0 +1,24 @@
+# permissions for end users to edit oai-basics.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: oai-basic-editor-role
+rules:
+- apiGroups:
+  - demo.nitinoai.com
+  resources:
+  - oai-basics
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - demo.nitinoai.com
+  resources:
+  - oai-basics/status
+  verbs:
+  - get

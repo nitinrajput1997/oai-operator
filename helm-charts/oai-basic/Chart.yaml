@@ -1,0 +1,56 @@
+apiVersion: v2
+name: oai-5g-basic
+type: application
+icon: http://www.openairinterface.org/wp-content/uploads/2015/06/cropped-oai_final_logo.png
+version: v1.4.0
+description: OAI 5G Release 16 Core Network
+
+appVersion: master-v1.4.0
+
+keywords:
+  - 5GCN
+  - AMF
+  - SMF
+  - NRF
+  - UPF
+  - UDM
+  - UDR
+  - AUSF
+
+maintainers:
+  - name:  OPENAIRINTERFACE
+    email: contact@openairinterface.org
+
+dependencies:
+        #- condition: mysql.enabled
+- name: mysql
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/mysql-1.6.9.tgz"
+  version: 1.6.9
+  #- condition: oai-nrf.enabled
+- name: oai-nrf
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-nrf-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-udr.enabled
+- name: oai-udr
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-udr-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-udm.enabled
+- name: oai-udm
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-udm-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-ausf.enabled
+- name: oai-ausf
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-ausf-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-amf.enabled
+- name: oai-amf
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-amf-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-smf.enabled
+- name: oai-smf
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-smf-v1.4.0.tgz"
+  version: v1.4.0
+  #- condition: oai-spgwu-tiny.enabled
+- name: oai-spgwu-tiny
+  repository: "https://nitinrajput1997.github.io/my-oai-charts-1/oai-spgwu-tiny-v1.4.0.tgz"
+  version: v1.4.0
